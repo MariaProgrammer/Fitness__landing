@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Days";
+  src: url("../fonts/ofont.ru_Days.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Black.woff") format("woff");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --tekst: #30333d;
+  --tekst-v-mini: #4a4a4a;
+  --accent-color: #2bbabb;
+
+  --font-family: "Gilroy";
+  --second-family: "Days", sans-serif;
+  --third-family: "SF Pro Display", sans-serif;
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--tekst-v-mini);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+button:active {
+  outline: none;
+}
+
+/* ------------------------Служебные классы------------------------------- */
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button {
+  border-radius: 10px;
+  width: 270px;
+  height: 78px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0 4px 2px 0 rgba(31, 78, 116, 0.25);
+  background: linear-gradient(90deg, #11b3b4 0%, #6dcecf 51%, #1bb5b6 100%);
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--tekst);
+ 
+}
