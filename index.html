@@ -4,253 +4,657 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Стройность без жертв</title>
+  <!-- <link
+      rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+
+  
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__inner">
+  <main class="main">
+    <header class="header">
+      <div class="header__inner">
       <div class="container">
-        <nav class="header__nav">        
-          <div class="header__logo">
-            <a href="#" class="header__logo-link">Автор курса</a>
-          </div>
-          <ul class="header__nav-list list-reset">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-item--link">О нас</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-item--link">Заявка на возврат</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-item--link">Отменить подписку</a>
-            </li>
-          </ul>
-          <button class="header__button btn-reset"><span>Личный кабинет</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_12_21)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.493 7.86984V6.12159H6.99562V4.37159H10.493V2.62422L13.9912 5.24747L10.493 7.86984ZM8.74475 10.4931H5.2465V2.62334L1.75 0.875094H8.74562V3.49834H9.62062V0.875094C9.62062 0.393844 9.22687 0.000968933 8.74562 0.000968933H0.874125C0.642435 0.00143139 0.420366 0.0936749 0.256536 0.257505C0.092706 0.421335 0.000462457 0.643404 0 0.875094L0 10.8256C0 11.1668 0.1925 11.4643 0.48125 11.6218L5.2465 14.0001V11.3681H8.74475C9.226 11.3681 9.61975 10.9743 9.61975 10.4931V6.99659H8.74475V10.4948V10.4931Z" fill="white" />
-              </g>
-              <defs>
-                <clipPath id="clip0_12_21">
-                  <rect width="14" height="14" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-        </div>
-      </nav>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__left">
-            <h1 class="hero__title">Cтройность <span>Без Жертв</span></h1>
-            <p class="hero__descr">Комплексная программа, разработанная профессиональными тренерами и<br> диетологами</p>
-            <div class="hero__buttons-wrap">
-              <button class="hero__button btn-reset button">Подробнее</button>
-              <div class="hero__button-descr">
-                <svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.94667 1.02868C8.94667 1.15113 9.13667 1.60291 9.52512 2.4178C9.99378 3.38891 10.1711 3.92513 10.1711 4.36424C10.1711 4.55424 10.1584 4.57957 10.0571 4.6218C9.86712 4.70202 8.92978 4.68513 8.60889 4.59646C7.55334 4.30935 6.77223 3.63802 5.75889 2.1518C5.55623 1.85202 5.38312 1.61979 5.37467 1.62824C5.36623 1.63668 5.40001 1.76335 5.44645 1.91535C5.83912 3.11024 6.33734 3.96735 7.11845 4.78224C7.77289 5.46624 8.49067 5.98557 9.72778 6.66113C10.6567 7.17202 11.3913 7.75046 11.7544 8.26557C12.1471 8.81868 12.2822 9.20291 12.3118 9.84891C12.3329 10.2669 12.3202 10.3851 12.24 10.6722C12.0838 11.2465 11.7291 11.8038 11.2393 12.2598C10.8847 12.5849 10.3231 12.9607 9.03956 13.7376C8.41889 14.1134 7.74334 14.5356 7.53223 14.6749C6.21489 15.5574 5.32823 16.4651 4.85534 17.4278C4.60623 17.9345 4.49645 18.2976 4.40778 18.8718C4.29378 19.6571 4.33601 20.1089 4.60201 20.8562C4.71178 21.1771 4.73712 21.3038 4.75401 21.7809C4.79623 22.7858 4.55556 23.5711 3.89267 24.6014C3.70267 24.8927 3.44934 25.2347 2.68934 26.2311C2.46978 26.5225 2.18267 26.9194 2.05601 27.1178C1.47756 28.0087 0.937116 29.1994 0.595116 30.3478C0.396672 31.0191 0.160228 32.5814 0.27845 32.4631C0.295339 32.4462 0.341783 32.3069 0.379783 32.1507C0.688005 30.9009 1.21578 29.6638 1.98845 28.3591C2.39378 27.6751 2.88356 26.9996 3.68156 26.0285C4.81734 24.6394 5.25223 23.9216 5.59001 22.866L5.65756 22.6465L6.00378 22.8618C6.51045 23.1785 6.51889 23.1827 7.04667 23.55C7.92489 24.158 8.95934 24.9687 9.96423 25.83C13.4982 28.8531 13.9289 29.1529 17.5389 31.0656C17.8809 31.2471 18.434 31.5469 19.3333 32.0282C19.5065 32.1211 19.6753 32.214 19.7049 32.2394C19.7344 32.2605 19.7682 32.2731 19.7809 32.2605C19.8062 32.2351 19.2404 31.72 18.7845 31.3569C18.3284 30.9896 17.7331 30.5674 16.4622 29.7145C15.0731 28.7771 14.6171 28.4605 14.0556 28.0214C13.6122 27.6794 12.5271 26.704 12.4638 26.5942C12.3878 26.4591 10.8804 24.9265 10.53 24.6267C9.96845 24.1454 9.59267 23.8878 8.64267 23.3389C8.16978 23.0645 7.60823 22.7182 7.38867 22.5662C6.62445 22.0385 6.13889 21.4853 5.89401 20.8689C5.70401 20.3791 5.67867 20.244 5.67867 19.56C5.67867 19.0238 5.69556 18.8338 5.77156 18.5171C6.21489 16.6931 7.40134 15.38 10.4878 13.29C12.6833 11.808 13.532 11.0227 14.0724 9.97557C14.3976 9.34646 14.4567 9.08891 14.4567 8.28668C14.4567 7.64068 14.4482 7.56468 14.3384 7.21846C14.064 6.36135 13.5404 5.55491 12.7129 4.71046C12.4258 4.41913 11.5813 3.64224 10.9944 3.13557C9.99378 2.27002 9.37734 1.61135 9.24223 1.27357C9.18312 1.12157 9.03956 0.940018 8.98045 0.940018C8.96356 0.940018 8.94667 0.978018 8.94667 1.02868Z" fill="#1FB6B7" />
-                </svg>
-                <p>Мы создали курс, который подарит вам фигуру мечты</p></div>
+          <nav class="header__nav">        
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">Автор курса</a>
             </div>
-          </div>
-          <div class="hero__right">
-            
-          </div>
-
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-item--link">О нас</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-item--link">Заявка на возврат</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-item--link">Отменить подписку</a>
+              </li>
+            </ul>
+            <button class="header__button btn-reset btn-hover"><span>Личный кабинет</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_12_21)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.493 7.86984V6.12159H6.99562V4.37159H10.493V2.62422L13.9912 5.24747L10.493 7.86984ZM8.74475 10.4931H5.2465V2.62334L1.75 0.875094H8.74562V3.49834H9.62062V0.875094C9.62062 0.393844 9.22687 0.000968933 8.74562 0.000968933H0.874125C0.642435 0.00143139 0.420366 0.0936749 0.256536 0.257505C0.092706 0.421335 0.000462457 0.643404 0 0.875094L0 10.8256C0 11.1668 0.1925 11.4643 0.48125 11.6218L5.2465 14.0001V11.3681H8.74475C9.226 11.3681 9.61975 10.9743 9.61975 10.4931V6.99659H8.74475V10.4948V10.4931Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_12_21">
+                    <rect width="14" height="14" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button class="burger-menu btn-reset burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
         </div>
         
-      </section>
-    </div>          
-  </header>
-  <section class="motivation">
-    <div class="motivation__inner">
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__green-box">
+          <img src="img/desctop_img/hero__green.png" alt="" class="hero__green">
+        </div>
+        
+       
+        <img src="img/desctop_img/hero__icon.png" alt="" class="hero__icon">
+        <div class="hero__woman">
+          <img src="img/desctop_img/hero__woman1.png" alt="" class="hero__woman-img">
+        </div>
+          
+       
       <div class="container">
+        <div class="hero__left">
+          <h1 class="hero__title">Cтройность <span>Без Жертв</span></h1>
+          <p class="hero__descr">Комплексная программа, разработанная профессиональными тренерами и диетологами</p>
+          <div class="hero__buttons-wrap">
+            <button class="hero__button btn-reset button custom-btn">Подробнее</button>
+            <div class="hero__button-descr">
+              <svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.94667 1.02868C8.94667 1.15113 9.13667 1.60291 9.52512 2.4178C9.99378 3.38891 10.1711 3.92513 10.1711 4.36424C10.1711 4.55424 10.1584 4.57957 10.0571 4.6218C9.86712 4.70202 8.92978 4.68513 8.60889 4.59646C7.55334 4.30935 6.77223 3.63802 5.75889 2.1518C5.55623 1.85202 5.38312 1.61979 5.37467 1.62824C5.36623 1.63668 5.40001 1.76335 5.44645 1.91535C5.83912 3.11024 6.33734 3.96735 7.11845 4.78224C7.77289 5.46624 8.49067 5.98557 9.72778 6.66113C10.6567 7.17202 11.3913 7.75046 11.7544 8.26557C12.1471 8.81868 12.2822 9.20291 12.3118 9.84891C12.3329 10.2669 12.3202 10.3851 12.24 10.6722C12.0838 11.2465 11.7291 11.8038 11.2393 12.2598C10.8847 12.5849 10.3231 12.9607 9.03956 13.7376C8.41889 14.1134 7.74334 14.5356 7.53223 14.6749C6.21489 15.5574 5.32823 16.4651 4.85534 17.4278C4.60623 17.9345 4.49645 18.2976 4.40778 18.8718C4.29378 19.6571 4.33601 20.1089 4.60201 20.8562C4.71178 21.1771 4.73712 21.3038 4.75401 21.7809C4.79623 22.7858 4.55556 23.5711 3.89267 24.6014C3.70267 24.8927 3.44934 25.2347 2.68934 26.2311C2.46978 26.5225 2.18267 26.9194 2.05601 27.1178C1.47756 28.0087 0.937116 29.1994 0.595116 30.3478C0.396672 31.0191 0.160228 32.5814 0.27845 32.4631C0.295339 32.4462 0.341783 32.3069 0.379783 32.1507C0.688005 30.9009 1.21578 29.6638 1.98845 28.3591C2.39378 27.6751 2.88356 26.9996 3.68156 26.0285C4.81734 24.6394 5.25223 23.9216 5.59001 22.866L5.65756 22.6465L6.00378 22.8618C6.51045 23.1785 6.51889 23.1827 7.04667 23.55C7.92489 24.158 8.95934 24.9687 9.96423 25.83C13.4982 28.8531 13.9289 29.1529 17.5389 31.0656C17.8809 31.2471 18.434 31.5469 19.3333 32.0282C19.5065 32.1211 19.6753 32.214 19.7049 32.2394C19.7344 32.2605 19.7682 32.2731 19.7809 32.2605C19.8062 32.2351 19.2404 31.72 18.7845 31.3569C18.3284 30.9896 17.7331 30.5674 16.4622 29.7145C15.0731 28.7771 14.6171 28.4605 14.0556 28.0214C13.6122 27.6794 12.5271 26.704 12.4638 26.5942C12.3878 26.4591 10.8804 24.9265 10.53 24.6267C9.96845 24.1454 9.59267 23.8878 8.64267 23.3389C8.16978 23.0645 7.60823 22.7182 7.38867 22.5662C6.62445 22.0385 6.13889 21.4853 5.89401 20.8689C5.70401 20.3791 5.67867 20.244 5.67867 19.56C5.67867 19.0238 5.69556 18.8338 5.77156 18.5171C6.21489 16.6931 7.40134 15.38 10.4878 13.29C12.6833 11.808 13.532 11.0227 14.0724 9.97557C14.3976 9.34646 14.4567 9.08891 14.4567 8.28668C14.4567 7.64068 14.4482 7.56468 14.3384 7.21846C14.064 6.36135 13.5404 5.55491 12.7129 4.71046C12.4258 4.41913 11.5813 3.64224 10.9944 3.13557C9.99378 2.27002 9.37734 1.61135 9.24223 1.27357C9.18312 1.12157 9.03956 0.940018 8.98045 0.940018C8.96356 0.940018 8.94667 0.978018 8.94667 1.02868Z" fill="#1FB6B7" />
+              </svg>
+              <p>Мы создали курс, который подарит вам фигуру мечты</p></div>
+          </div>
+        </div>
+        <div class="hero__right">
+          <div class="hero__woman--right">
+            <img src="img/desctop_img/hero__woman1.png" alt="" class="hero__woman-img">
+          </div>
+          
+        </div>
+  
+      </div>
+      <button class="hero__button576 btn-reset custom-btn">Подробнее</button>
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item"><a href="" class="burger-menu__link">О нас</a></li>
+        <li class="burger-menu__item"><a href="" class="burger-menu__link">Заявка на возврат</a></li>
+        <li class="burger-menu__item"><a href="" class="burger-menu__link">Отменить подписку</a></li>
+      </ul>
+    </div>
+      
+    </section>  
+    <section class="motivation">
+      <div class="motivation__inner">
         <h2 class="motivation__title title">Почему необходима<br><span>внутренняя мотивация</span></h2>
-        <div class="motivation__list">
-          <div class="motivation__item"></div>
+        
+        <div class="container">
+          
+          <div class="motivation__list motivation__list--first">
+            <div class="motivation__item">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="19" height="19" rx="1.27778" fill="#289899" />
+                <path d="M13.5999 5.78418L8.54904 10.4837L6.413 8.19746L5 9.52543L8.45087 13.219L14.913 7.21182L13.5999 5.78418Z" fill="white" />
+              </svg>
+
+              <div class="motivation__item-cifra">
+                <div class="cifra">01</div>
+                <img src="img/desctop_img/motivation__circle.svg" alt="" class="motivation-circle">
+              </div>
+              <p>Внутренняя мотивация помогает строго следовать диете и регулярно заниматься спортом. </p>
+            </div>
+            <div class="motivation__item">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="19" height="19" rx="1.27778" fill="#289899" />
+                <path d="M13.5999 5.78418L8.54904 10.4837L6.413 8.19746L5 9.52543L8.45087 13.219L14.913 7.21182L13.5999 5.78418Z" fill="white" />
+              </svg>
+              <div class="motivation__item-cifra">
+                <div class="cifra">02</div>
+                <img src="img/desctop_img/motivation__circle.svg" alt="" class="motivation-circle">
+              </div>
+              <p>Такая мотивация также поддерживает интерес к процессу похудения на протяжении долгого времени.</p>
+            </div>
+           
+          </div>
+          <div class="motivation__list">
+            <div class="motivation__item">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="19" height="19" rx="1.27778" fill="#289899" />
+                <path d="M13.5999 5.78418L8.54904 10.4837L6.413 8.19746L5 9.52543L8.45087 13.219L14.913 7.21182L13.5999 5.78418Z" fill="white" />
+              </svg>
+              <div class="motivation__item-cifra">
+                <div class="cifra">03</div>
+                <img src="img/desctop_img/motivation__circle.svg" alt="" class="motivation-circle">
+              </div>
+              <p>Это помогает преодолевать трудности и находить выход из сложных ситуаций.</p>
+            </div>
+            <div class="motivation__item">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="19" height="19" rx="1.27778" fill="#289899" />
+                <path d="M13.5999 5.78418L8.54904 10.4837L6.413 8.19746L5 9.52543L8.45087 13.219L14.913 7.21182L13.5999 5.78418Z" fill="white" />
+              </svg>
+              <div class="motivation__item-cifra">
+                <div class="cifra">04</div>
+                <img src="img/desctop_img/motivation__circle.svg" alt="" class="motivation-circle">
+              </div>
+              <p>Это не только помогает достичь целей, но и сохранять здоровый образ жизни в будущем.</p>
+            </div>
+          </div>
+        </div>
+        <div class="motivation__img">
+          <img src="img/desctop_img/motivation__woman.png" alt="">
         </div>
       </div>
-    </div>
-  </section> 
-  <section class="relief">
-    <div class="container">
-      <div class="relief__list">
-        <div class="relief__item">
-          <img src="#" alt="" class="relief__img">
-          <p class="relief__text"></p>
-        </div>
-        <div class="relief__item">
-          <img src="#" alt="" class="relief__img">
-          <p class="relief__text"></p>
-        </div>
-        <div class="relief__item">
-          <img src="#" alt="" class="relief__img">
-          <p class="relief__text"></p>
-        </div>
-        <div class="relief__item">
-          <img src="#" alt="" class="relief__img">
-          <p class="relief__text"></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="course">
-    <div class="course__inner">
+    </section> 
+    <section class="relief">
       <div class="container">
-        <h3 class="course__title"></h3>
-        <p class="course__descr"></p>
-        <button class="course__button btn-reset button"></button>
-      </div>
-    </div>
-  </section>
-  <section class="program">
-    <div class="container">
-      <div class="program__grid">
-        <div class="program__card">
-          <div class="program__img">
-
+        <h2 class="relief__title title">внутренняя мотивация поможет обрести <span>рельеф быстро и без усилий над собой</span></h2>
+        <div class="relief__list">
+          <div class="relief__item">
+            <img src="img/desctop_img/relief_1.svg" alt="" class="relief__img">
+            <p class="relief__text">Внутренняя мотивация <span>основана на личных ценностях</span> человека. Это делает её более устойчивой, так как <span>она не зависит от внешних факторов.</span></p>
           </div>
-          <h5 class="progtam__title"></h5>
-          <p class="program__text"></p>
-          <p class="program__text"></p>
-        </div>
-        <div class="program__card">
-          <div class="program__img">
-
+          <div class="relief__item">
+            <img src="img/desctop_img/relief_2.svg" alt="" class="relief__img">
+            <p class="relief__text">Внутренний стимул <span>побуждает человека к соблюдению режима и дисциплине</span> в питании и физической активности.</p>
           </div>
-          <h5 class="progtam__title"></h5>
-          <p class="program__text"></p>
-          <p class="program__text"></p>
-        </div>
-        <div class="program__card">
-          <div class="program__img">
-
+          <div class="relief__item">
+            <img src="img/desctop_img/relief_3.svg" alt="" class="relief__img">
+            <p class="relief__text"><span>Достижение целей,</span> определяемых внутренними мотивами, <span>приносит удовлетворение и укрепляет самооценку.</span></p>
           </div>
-          <h5 class="progtam__title"></h5>
-          <p class="program__text"></p>
-          <p class="program__text"></p>
+          <div class="relief__item">
+            <img src="img/desctop_img/relief_4.svg" alt="" class="relief__img">
+            <p class="relief__text">Внутренняя мотивация <span>позволяет сохранять интерес к процессу похудения</span> на протяжении длительного времени.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="author">
-    <div class="author__inner">
-      <div class="container">
-        <h2 class="author__title title"></h2>
-        <div class="author__img"></div>
+    </section>
+    <section class="course">
+      <div class="course__inner">
+        
+          <h3 class="course__title">Учитывая все ключевые факторы, мы создали курс, который проведет вас через все этапы – <span>от&nbsp; составления&nbsp; полной&nbsp; программы&nbsp; и&nbsp; до </span></h3>
+          <h3 class="course__title"><span>ощутимых&nbsp; результатов</span></h3>
+          <h3 class="course__title">
+            Учитывая все ключевые факторы, мы создали курс, который проведет вас через все этапы – <span>от составления полной программы и до ощутимых результатов</span>
+          </h3>
+          <p class="course__descr">Процесс трансформации проходит под контролем опытных наставников. С нашим курсом путь к телу мечты будет мощным и результативным.</p>
+          <button class="course__button btn-reset button custom-btn">Подробнее</button>
+          <div class="course__woman-img">
+            <img src="img/desctop_img/course__woman1.png" alt="" class="course__woman-pic">
+          </div>
+          <img src="img/desctop_img/course__green.png" alt="" class="course__green">
+
+       
+         
+          
+        
+      </div>
+    </section>
+    <section class="program">
+      <div class="container program__container">
+        <h2 class="program__title title">Программа курса</h2>
+        <div class="program__cards-box">
+          <div class="program__card">
+            <div class="program__card-img">
+              <img src="img/desctop_img/program_3.png" alt="" class="program__img">
+            </div>
+            
+            <h5 class="progtam__subtitle">Тренировки</h5>
+            <p class="program__text"><span>Два модуля,</span> где мы проработаем каждую мышцу с бережным отношением к себе и с максимальной эффективностью.</p>
+            <p class="program__text program__text--last"> <span>Программа тренировок.</span> Подробные планы, рассчитанные на все уровни подготовки, от новичка до PRO.</p>
+          </div>
+          <div class="program__card">
+            <div class="program__card-img">
+              <img src="img/desctop_img/program_1.png" alt="" class="program__img">
+            </div>        
+            <h5 class="progtam__subtitle">Индивидуальный план питания</h5>
+            <p class="program__text"><span>Блюда, которые зарядят вас энергией.</span> Никаких компромиссов – только правильные ингредиенты и максимальный эффект.</p>
+            <p class="program__text program__text--last"><span>Стратегии питания.</span> Узнайте, как правильно сочетать продукты, чтобы каждый прием пищи работал на ваш результат.</p>
+          </img>        
+        </div>
+        <div class="program__card">
+          <div class="program__card-img">
+            <img src="img/desctop_img/program_2.png" alt="" class="program__img">
+          </div>
+          <h5 class="progtam__subtitle">Дополнительные&nbsp; материалы</h5>
+          <p class="program__text program__text--last"><span>Гайды и чек-листы</span></p>          
+        </div>
+      </div>
+    </section>
+    <section class="author">
+      <h2 class="author__title title">Автор программы</h2>
+      <div class="container author__container">
+        <div class="author__descr960-box">
+          <div class="author__descr960">
+            <div class="author__descr--text960">
+              <p class="author__descr--first"><span>Специализируется на разработке программ питания</span></p>
+            <p ><span>Сертифицированный нутрициолог с 15-летним опытом работы.</span></p>  
+            </div>           
+          </div>
+        </div>               
+      <div class="author__inner">
+       
         <div class="author__left">
-          <div class="author__name"></div>
-          <div class="author__descr">
-            <p class="author__descr--text"></p>          
+          <div class="author__name">
+            <div class="author__firstname">Александра</div>
+            <div class="author__lastname">Петрова</div>
+            <div class="author__button768">
+              <button class="author__btn btn-reset button custom-btn">Подробнее</button>
+  
+            </div>
+                        
+              <img src="img/desctop_img/author__oval.png" alt="" class="author__oval-upper">
+              <img src="img/desctop_img/author__oval.png" alt="" class="author__oval-lower">            
+          </div>
+          
+         
+            <div class="author__descr ">
+              <p class="author__descr--text descr__left"><span>Специализируется на разработке программ питания</span></p>          
+            </div>
+            
+
+         
+          
+        </div>
+        <div class="author__img">
+          <img src="img/desctop_img/author__woman.png" alt="">
+          <div class="author__button960">
+            <button class="author__btn btn-reset button custom-btn">Подробнее</button>
+
           </div>
         </div>
         <div class="author__right">
-          <div class="author__specialisation"></div>
-          <button class="author__btn btn-reset button"></button>
-        </div>  
+          <div class="author__specialisation ">
+           <div class="author__descr--text"><span>Сертифицированный нутрициолог с 15-летним опытом работы.</span></div> 
+              
+             
+            </div>           
+            <div class="author__btn--large">
+              <button class="author__btn btn-reset button custom-btn">Подробнее</button>
+            </div>
+            
+          </div>
+          <div class="author__button576">
+            <button class="author__btn btn-reset button custom-btn">Подробнее</button>
+
+          </div>
+          
+        </div>
+    </div>
+      </div>    
+    </section>
+    <section class="tariff">
+      <h2 class="tariff__title title">наши <span>тарифы</span></h2>
+      <div class="tariff__inner">
+       
+        <form class="tariff__form">
+          <h5 class="tariff__card-title">Пробный доступ</h5>
+          <svg class="tariff__linie" height="2" viewBox="0 0 459 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1L459 1.00004" stroke="#C7C7C7" />
+          </svg>
+          <div class="tariff__price">177&#8381;<span>10990&#8381;</span></div>
+          <p class="tariff__list-item">Доступ к платформе на 1 день</p>
+          <p class="tariff__list-item">Персональная программа тренировок и питания, составленная на основе ваших целей</p>
+          <p class="tariff__list-item">2 тренировочных модуля</p>
+          <p class="tariff__list-item">25 рецептов</p>
+          <div class="tariff__button-box">
+            <button type="submit" class="tariff__button btn-reset btn-hover custom-btn">купить пробный курс</button>
+          </div>
+         
+          <div class="tariff__input">
+            <input type="checkbox" name="data-check" id="data-check" class="tariff__input-data">
+            <label for="data-check"><span>Я соглашаюсь со следующими условиями: <a href="#" target="_blank" class="tariff__link">Согласие на обработку персональных данных.</a> Я ознакомился и соглашаюсь с <a href="#" target="_blank" class="tariff__link">Договором публичной оферты</a>, <a href="#" target="_blank" class="tariff__link">Соглашением о применении рекуррентных платежей</a>, <a href="#" target="_blank" class="tariff__link">Условиями оплаты</a>, <a href="#" target="_blank" class="tariff__link">Политикой конфиденциальности</a> и <a href="#" target="_blank" class="tariff__link">действующими тарифами.</a></span></label>
+          </div>
+          <div class="tariff__input">
+            <input type="checkbox" name="price-check" id="price-check" class="tariff__input-data">
+            <label for="price-check"><span>Соглашаюсь на автоматическую оплату 980 рублей за продление доступа к материалам сайта за каждые 4 дня по истечении пробного периода в 1 день согласно <a href="#" target="_blank" class="tariff__link">Тарифам</a>, <a href="#" target="_blank" class="tariff__link">Соглашением о применении рекуррентных платежей.</a></span></label>
+          </div>
+        </form>
+        
+      </div>
+    </section>
+    <article class="refund">
+      <div class="refund__inner">
+        <div class="refund__upper">
+          <p class="refund__text">В случае, если вы ошибочно оформили подписку, нажмите сюда, чтобы оформить заявку на возврат средств</p>
+          <button type="submit" class="refund__btn btn-reset">возврат средств</button>  
+        </div>
+       
+        <div class="refund__band-1">
+          <img src="img/desctop_img/refund__band1.png" alt="" class="refund__img">
+
+        </div>
+      </div>
+    </article>
+    <section class="success">
+      <div class="success__inner container">
+        <h2 class="success__title title"><span>Успехи</span> учеников</h2>
+      <div class="success__slider">
+        <div class="swiper swiper1">
+          <div class="button-box">
+            <div class="swiper-button-next success__button ">
+              <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22.9777" cy="23.2111" r="22.9777" fill="#EDF0F3"/>
+                <circle cx="22.9777" cy="23.2111" r="22.9777" fill="url(#paint0_linear_43_73)" fill-opacity="0.3"/>
+                <path d="M28.7217 23.7854C29.0389 23.7854 29.2961 23.5282 29.2961 23.2109C29.2961 22.8937 29.0389 22.6365 28.7217 22.6365V23.7854ZM16.8266 22.8047C16.6023 23.0291 16.6023 23.3928 16.8266 23.6171L20.4824 27.2729C20.7067 27.4972 21.0704 27.4972 21.2948 27.2729C21.5191 27.0485 21.5191 26.6848 21.2948 26.4605L18.0452 23.2109L21.2948 19.9614C21.5191 19.7371 21.5191 19.3734 21.2948 19.149C21.0704 18.9247 20.7067 18.9247 20.4824 19.149L16.8266 22.8047ZM28.7217 22.6365H17.2328V23.7854H28.7217V22.6365Z" fill="#B5B5B5"/>
+                <defs>
+                <linearGradient id="paint0_linear_43_73" x1="1.47922e-06" y1="17.0837" x2="18.7093" y2="-0.183348" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0"/>
+                <stop offset="0.51774" stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>            
+              
+            </div>
+            <div class="swiper-button-prev success__button active">
+              <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22.9777" cy="23.2111" r="22.9777" fill="#EDF0F3"/>
+                <circle cx="22.9777" cy="23.2111" r="22.9777" fill="url(#paint0_linear_43_73)" fill-opacity="0.3"/>
+                <path d="M17.2328 23.7854C16.9155 23.7854 16.6583 23.5282 16.6583 23.2109C16.6583 22.8937 16.9155 22.6365 17.2328 22.6365V23.7854ZM29.1278 22.8047C29.3522 23.0291 29.3522 23.3928 29.1278 23.6171L25.4721 27.2729C25.2478 27.4972 24.884 27.4972 24.6597 27.2729C24.4354 27.0485 24.4354 26.6848 24.6597 26.4605L27.9092 23.2109L24.6597 19.9614C24.4354 19.7371 24.4354 19.3734 24.6597 19.149C24.884 18.9247 25.2478 18.9247 25.4721 19.149L29.1278 22.8047ZM17.2328 22.6365H28.7216V23.7854H17.2328V22.6365Z" fill="#B5B5B5"/>
+                <defs>
+                <linearGradient id="paint0_linear_43_73" x1="1.47922e-06" y1="17.0837" x2="18.7093" y2="-0.183348" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0"/>
+                <stop offset="0.51774" stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+              
+
+              
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="success__slide">
+                <div class="success__slide--upper">
+                  <img src="img/desctop_img/avatar_lg.png" alt="" class="success__img">
+                  <div class="success__slide--box">
+                    <h4 class="success__slide--name">Елена</h4>
+                    <p class="success__slide--age">25 лет</p>
+                  </div>
+                </div>
+                <div class="success__slide--lower">
+                  <p class="success__slide--descr">Курс оказался идеальным стартом. Сбросила 5 кг за первые два недели и продолжаю улучшать свои результаты. Наконец-то я чувствую, что нашла именно то что надо!</p>
+                </div> 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="success__slide">
+                <div class="success__slide--upper">
+                  <img src="img/desctop_img/avatar_lg.png" alt="" class="success__img">
+                  <div class="success__slide--box">
+                    <h4 class="success__slide--name">Алена</h4>
+                    <p class="success__slide--age">25 лет</p>
+                  </div>
+                </div>
+                <div class="success__slide--lower">
+                  <p class="success__slide--descr">Курс оказался идеальным стартом. Сбросила 5 кг за первые два недели и продолжаю улучшать свои результаты. Наконец-то я чувствую, что нашла именно то что надо!</p>
+                </div> 
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="success__slide">
+                <div class="success__slide--upper">
+                  <img src="img/desctop_img/avatar_lg.png" alt="" class="success__img">
+                  <div class="success__slide--box">
+                    <h4 class="success__slide--name">Анна</h4>
+                    <p class="success__slide--age">25 лет</p>
+                  </div>
+                </div>
+                <div class="success__slide--lower">
+                  <p class="success__slide--descr">Курс оказался идеальным стартом. Сбросила 5 кг за первые два недели и продолжаю улучшать свои результаты. Наконец-то я чувствую, что нашла именно то что надо!</p>
+                </div> 
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="success__slide">
+                <div class="success__slide--upper">
+                  <img src="img/desctop_img/avatar_lg.png" alt="" class="success__img">
+                  <div class="success__slide--box">
+                    <h4 class="success__slide--name">Мария</h4>
+                    <p class="success__slide--age">25 лет</p>
+                  </div>
+                </div>
+                <div class="success__slide--lower">
+                  <p class="success__slide--descr">Курс оказался идеальным стартом. Сбросила 5 кг за первые два недели и продолжаю улучшать свои результаты. Наконец-то я чувствую, что нашла именно то что надо!</p>
+                </div> 
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="success__slide">
+                <div class="success__slide--upper">
+                  <img src="img/desctop_img/avatar_lg.png" alt="" class="success__img">
+                  <div class="success__slide--box">
+                    <h4 class="success__slide--name">Инна</h4>
+                    <p class="success__slide--age">25 лет</p>
+                  </div>
+                </div>
+                <div class="success__slide--lower">
+                  <p class="success__slide--descr">Курс оказался идеальным стартом. Сбросила 5 кг за первые два недели и продолжаю улучшать свои результаты. Наконец-то я чувствую, что нашла именно то что надо!</p>
+                </div> 
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="success__slide">
+                <div class="success__slide--upper">
+                  <img src="img/desctop_img/avatar_lg.png" alt="" class="success__img">
+                  <div class="success__slide--box">
+                    <h4 class="success__slide--name">Алла</h4>
+                    <p class="success__slide--age">25 лет</p>
+                  </div>
+                </div>
+                <div class="success__slide--lower">
+                  <p class="success__slide--descr">Курс оказался идеальным стартом. Сбросила 5 кг за первые два недели и продолжаю улучшать свои результаты. Наконец-то я чувствую, что нашла именно то что надо!</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="success__nav"></div>
       </div>
 
-    </div>    
-  </section>
-  <section class="tariff">
-    <div class="tariff__inner">
-      <h2 class="tariff__title title"></h2>
-      <form class="tariff__form"></form>
+      </div>
       
-    </div>
-  </section>
-  <section class="refund">
-    <div class="refund__inner">
-      <div class="refund__upper">
-        <p class="refund__text"></p>
-        <button class="refund__btn btn-reset button">возврат средств</button>
-
+    </section>
+    <section class="question">
+      <h2 class="question__title title">Частые <span>вопросы</span></h2>
+      <div class="container">        
+        <div class="question__inner">
+          <ul class="accordion__list">
+            <li class="accordion open" aria-hidden="false">
+              <button class="accordion__control" aria-expanded="true">
+                <span class="accordion__title">Подойдет ли этот курс для новичков?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="open accordion__content" aria-hidden="true">                
+                <p>Да, курс разработан как для новичков, так и для опытных спортсменов, с индивидуальным подходом к каждому участнику.</p>
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Сколько времени занимает достижение видимых результатов?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, magnam!</p>
+              </div>
+            </li>
+            
+          </ul>
+          <ul class="accordion__list">
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Нужно ли иметь специальное оборудование для тренировок?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, magnam!</p>
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Могу ли я пройти курс, если я не в России?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, magnam!</p>
+              </div>
+            </li>
+            <li class="accordion accordion__last">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Есть ли возможность рассрочки?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, magnam!</p>
+              </div>
+            </li>            
+          </ul>
+        </div>
+  
       </div>
-    </div>
-  </section>
-  <section class="success">
-    <h2 class="success__title title"></h2>
-    <div class="success__slider">
-      <div class="success__slide">
-        <div class="success__slide--upper">
-          <img src="" alt="" class="success__img">
-          <div class="success__slide--box">
-            <p class="success__slide--name"></p>
-            <p class="success__slide--age"></p>
-          </div>
-        </div>
-        <div class="success__slide--lower">
-          <p class="success__slide--descr"></p>
-        </div>
+    </section>
+    <section class="conditions">
+      <h2 class="conditions__title title">Условия <span>оплаты</span></h2>
+      <div class="container">
+        <div class="conditions__list">
+          <div class="conditions__item">
+            <img src="img/desctop_img/flag_1.png" alt="" class="conditions__item-num">
+           <div class="conditions__item-icon">
+            <div class="conditions__item-circle">
+              <img src="img/desctop_img/galka.png" alt="" class="conditions__item-galka">
+            </div>
+           </div>
+            
+            
 
-      </div>
-      <div class="success__slide">
-        <div class="success__slide--upper">
-          <img src="" alt="" class="success__img">
-          <div class="success__slide--box">
-            <p class="success__slide--name"></p>
-            <p class="success__slide--age"></p>
-          </div>
-        </div>
-        <div class="success__slide--lower">
-          <p class="success__slide--descr"></p>
-        </div>
+            <h6 class="conditions__item-title">В день<br>регистрации</h6>
+            <div class="conditions__item-block">
+              <p class="conditions__item-text">Оплата производится в день регистрации Пользователя на Сайте, заполнения Пользователем всех необходимых форм, и при условии акцепта договора - оферты. Стоимость услуг указана в рублях.</p>
+            </div>
 
-      </div>
-      <div class="success__slide">
-        <div class="success__slide--upper">
-          <img src="" alt="" class="success__img">
-          <div class="success__slide--box">
-            <p class="success__slide--name"></p>
-            <p class="success__slide--age"></p>
           </div>
-        </div>
-        <div class="success__slide--lower">
-          <p class="success__slide--descr"></p>
-        </div>
+          <div class="conditions__item">
+            <img src="img/desctop_img/flag_2.png" alt="" class="conditions__item-num">
+           <div class="conditions__item-icon">
+            <div class="conditions__item-circle">
+              <img src="img/desctop_img/galka.png" alt="" class="conditions__item-galka">
+            </div>
+           </div>
+            
+            
 
-      </div>
-      <div class="success__nav"></div>
-    </div>
-  </section>
-  <section class="question">
-    <h2 class="question__title title"></h2>
-    <div class="container">
-      <div class="question__box">
-        <div class="question__card">
-          <h5 class="question__card--name"></h5>
-          <div class="question__card--box">
-            <p class="question__card--text"></p>
+            <h6 class="conditions__item-title">Доступ<br>ко всем блокам</h6>
+            <div class="conditions__item-block">
+              <p class="conditions__item-text">Онлайн-курс состоит из 42 (сорока двух) платных блоков. Блоки открываются по мере прохождения курса (каждые 4 дня), вы можете получить доступ ко всем блокам сразу за 1240 руб.</p>
+            </div>
+
           </div>
-        </div>
-        <div class="question__card">
-          <h5 class="question__card--name"></h5>
-          <div class="question__card--box">
-            <p class="question__card--text"></p>
+          <div class="conditions__item">
+            <img src="img/desctop_img/flag_3.png" alt="" class="conditions__item-num">
+           <div class="conditions__item-icon">
+            <div class="conditions__item-circle">
+              <img src="img/desctop_img/galka.png" alt="" class="conditions__item-galka">
+            </div>
+           </div>
+            
+            
+
+            <h6 class="conditions__item-title">Отписка<br>самостоятельно</h6>
+            <div class="conditions__item-block">
+              <p class="conditions__item-text">Если услуга перестала быть актуальна для Вас, Вы можете самостоятельно отписаться от услуги в любой момент направив соответствующее заявление в адрес службы поддержки: <a href="mailto:support@thefitnesslifestyles.com">support@thefitnesslifestyles.com</a></p>
+            </div>
+
           </div>
-        </div>
-        <div class="question__card">
-          <h5 class="question__card--name"></h5>
-          <div class="question__card--box">
-            <p class="question__card--text"></p>
-          </div>
-        </div>
-        <div class="question__card">
-          <h5 class="question__card--name"></h5>
-          <div class="question__card--box">
-            <p class="question__card--text"></p>
+          <div class="conditions__item">
+            <img src="img/desctop_img/flag_4.png" alt="" class="conditions__item-num">
+           <div class="conditions__item-icon">
+            <div class="conditions__item-circle">
+              <img src="img/desctop_img/galka.png" alt="" class="conditions__item-galka">
+            </div>
+           </div>        
+            <h6 class="conditions__item-title">Доп.<br>помощь</h6>
+            <div class="conditions__item-block">
+              <p class="conditions__item-text">Если вам потребуется дополнительная помощь обращайтесь в службу поддержки по электронной почте: <a href="mailto:support@thefitnesslifestyles.com">support@thefitnesslifestyles.com</a></p>
+            </div>
+
           </div>
         </div>
       </div>
-
-    </div>
-  </section>
+    </section>
+  </main>  
   <footer class="footer">
-    <div class="footer__upper"></div>
-    <div class="footer__lower"></div>
+    <div class="footer__inner">
+      <div class="container">       
+        <div class="footer__upper">
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#" class="footer__link">О нас</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Отмена подписки</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Тарифы</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Чат с поддержкой</a></li>
+          </ul>
+          <div class="footer__linie"></div>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Условия оплаты</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Договор-оферта</a></li>        
+          </ul>
+          <div class="footer__linie"></div>
+          <div class="footer__pay">
+            <img src="img/desctop_img/card__mir.png" alt="" class="footer__pay-img">
+            <img src="img/desctop_img/card__visa.png" alt="" class="footer__pay-img">
+            <img src="img/desctop_img/card__master.png" alt="" class="footer__pay-img">
+            <img src="img/desctop_img/card__paypal.png" alt="" class="footer__pay-img">
+          </div>
+          <ul class="footer__info">
+            <li class="footer__info-text">ООО "МУВИОН"</li>
+            <li class="footer__info-text">ИНН: 7100052580</li>
+            <li class="footer__info-text">ОГРН: 1247100003941</li>
+            <li class="footer__info-text"><span>Контакты: <a href="mailto:support@thefitnesslifestyles.com">support@thefitnesslifestyles.com</a></span></li>
+            <li class="footer__info-text"><span>Этот веб-сайт использует cookies</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        <div class="footer__lower">
+          <p class="footer__copyright">© <span>THEFITNESSLIFESTYLES 2024</span> Все права защищены</p>
+        </div>
+      
+ 
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
