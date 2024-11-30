@@ -264,16 +264,19 @@
 .motivation__inner {
   padding-top: 39px;
   padding-bottom: 143px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  border-radius: 40px;
   max-width: 1256px;
   margin: 0 auto;
-  background-image: url("../img/desctop_img/motivation__woman.png"),
-    url("../img/desctop_img/motivation_bg.png");
+  background-image: url("../img/desctop_img/motivation__woman.png"),    url("../img/desctop_img/motivation_bg.png");
   background-repeat: no-repeat;
   background-position: center bottom, center;
   background-size: 590px auto, cover;
+  background-clip: padding-box;
   margin-bottom: 100px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 }
 .motivation__img {
   display: none;
@@ -281,6 +284,7 @@
 
 .motivation__title {
   margin-bottom: 126px;
+  padding-bottom: 30px;
 }
 
 .motivation__list {

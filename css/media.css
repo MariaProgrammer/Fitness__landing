@@ -148,18 +148,30 @@
   }
   .motivation__title {
     margin-bottom: 35px;
+    padding-bottom: 0;
   }
   .motivation__item-cifra {
     display: block;
     position: relative;
   }
+  
   .cifra {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 80px;
     line-height: 104px;
     color: var(--accent-color);
+    position: relative;
   }
+  .motivation__line {
+    height: 26px;
+    width: 1px;
+    background: var(--accent-color);
+    position: absolute;
+    left: 50%;
+    top: -13px;
+    
+}
   .motivation-circle {
     position: absolute;
     width: 15px;
