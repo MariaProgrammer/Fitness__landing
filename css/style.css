@@ -538,6 +538,9 @@
   position: relative;
   margin-bottom: 140px;
 }
+.author__container {
+  position: relative;
+}
 .author__img {
   position: absolute;
   left: 50%;
@@ -655,14 +658,15 @@
   background: linear-gradient(226deg, #e7edf2 77.17%, #86898c 100%);
   padding: 0.5em;
   margin-bottom: 41px;
-  position: relative;
+  
 }
 .author__specialisation-img {
   position: absolute;
-  bottom: 0;
-  right: -110px;
+  bottom: 38%;
+  right: -95px;
   width: auto;
   max-height: 331px;
+  z-index: 600;
 }
 .author__specialisation-img img{
   width: 100%;

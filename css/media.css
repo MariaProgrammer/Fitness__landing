@@ -1,3 +1,11 @@
+@media (max-width: 1390px) {
+  .author__specialisation-img {
+    right: 0;
+    bottom: 36%;
+    width: 250px;
+    height: auto;
+  }
+}
 @media (max-width: 1199px) {
   .container {
     max-width: 100%;
@@ -373,6 +381,9 @@
   .swiper-wrapper {
     padding-top: 45px;
   }
+  .author__specialisation-img {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .header__logo {
@@ -720,6 +731,7 @@
     background-repeat: no-repeat;
     background-position: 75% 100%, 98% 59%;
     background-size: auto 475px, 180px 180px;
+    position: relative;
   }
   .author__oval-upper,
   .author__oval-upper {
