@@ -46,6 +46,11 @@
 .header__nav-item:last-child {
   margin-right: 0;
 }
+.header__nav-item:hover, .header__nav-item:focus,.header__nav-item:active {
+  font-weight: 700px;
+  text-decoration: underline;
+
+}
 .header__nav-item--link {
 }
 .header__button {
