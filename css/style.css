@@ -106,11 +106,12 @@
 .burger-menu span:last-child {
   bottom: 9px;
 }
-.burger-menu:hover, .burger-menu:focus, .burger-menu:active {
+.burger-menu.active {
   background: linear-gradient(90deg, #0e9191 0%, #59a7a9 51%, #159090 100%);
 }
 
 .burger-menu__list {
+   display: none;
    opacity: 0;
    position: absolute;
    right: 15px;

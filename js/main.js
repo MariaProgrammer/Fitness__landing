@@ -22,6 +22,7 @@ const burgerMenu = document.querySelector('.burger-menu__list');
 
 burger.addEventListener('click', ()=> {
 	burgerMenu.classList.toggle('active');
+	burger.classList.toggle('active');
 })
 	
 
