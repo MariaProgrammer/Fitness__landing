@@ -126,7 +126,7 @@ button:active {
   font-size: 20px;
   text-transform: uppercase;
   color: #fff;
-  box-shadow: 0 4px 2px 0 rgba(31, 78, 116, 0.25);
+  
   background: linear-gradient(90deg, #11b3b4 0%, #6dcecf 51%, #1bb5b6 100%);
   display: flex;
   align-items: center;

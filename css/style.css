@@ -78,6 +78,7 @@
   width: 52px;
   height: 38px;
   border-radius: 5px;
+  box-shadow: 0 4px 2px 0 rgba(31, 78, 116, 0.25);
   background: linear-gradient(90deg, #26b8b9 0%, #6acdce 50.71%, #26b8b9 100%);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
