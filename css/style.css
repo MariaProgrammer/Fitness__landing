@@ -407,6 +407,7 @@
   margin-bottom: 45px;
 }
 .program__cards-box {
+  width: 100%;
   display: flex;
   gap: 30px;
   justify-content: space-between;
@@ -422,13 +423,82 @@
 .program__card-img {
   max-width: 370px;
   max-height: 155px;
-  margin-bottom: 20px;
+  margin-bottom: 54px;
+  position: relative;
 }
 .program__img {
-  display: block;
+    display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
+}
+.program__plashka {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;  
+  padding: 14px 30px 17px 30px;
+  width: 190px;
+  height: 40px;
+  color: #2c2c2c;
+  background: #fff;
+  box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.25);  
+  border-radius: 5px;
+ z-index: 100;
+   -webkit-transform: translateX(-50%) rotate(-2deg);
+  -moz-transform: translateX(-50%) rotate(-2deg);
+  -ms-transform: translateX(-50%) rotate(-2deg);
+  -o-transform: translateX(-50%) rotate(-2deg);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.program__plashka span {
+  display: inline-block;
+  padding-left: 6px;
+}
+.plaska-1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/desctop_img/program__icon_1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.plaska-2 {
+  color: white;
+  background: #2c2c2c;
+  z-index: 100;
+}
+.plaska-2::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/desctop_img/program__icon_2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.plaska-3 {
+  background: var(--accent-color);
+  color: white;
+  z-index: 100;
 }
 .progtam__subtitle {
   text-align: center;
