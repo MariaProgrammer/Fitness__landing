@@ -46,7 +46,7 @@
 .header__nav-item:last-child {
   margin-right: 0;
 }
-.header__nav-item:hover, .header__nav-item:focus,.header__nav-item:active {
+.header__nav-item--link:hover, .header__nav-item--link:focus,.header__nav-item--link:active {
   font-weight: 700px;
   text-decoration: underline;
 
