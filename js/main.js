@@ -58,8 +58,8 @@ const accordions = document.querySelectorAll('.accordion');
     speed: 1000,
     keyboard: true,	
 		navigation: {
-			nextEl: '.swiper-button-prev',
-			prevEl: '.swiper-button-next',
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
 		},
 		breakpoints: {
 			// when window width is >= 320px
