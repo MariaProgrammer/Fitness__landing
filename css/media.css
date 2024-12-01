@@ -842,6 +842,9 @@
   .motivation__img {
     width: 80%;
   }
+  .motivation__line {
+    top: 0;
+  }
   .relief__list {
     margin-bottom: 52px;
   }
@@ -953,6 +956,9 @@
   .title {
     font-size: 28px;
     line-height: 40px;
+  }
+  .burger-menu__list {
+    width: 300px;
   }
   .refund__btn {
     width: 100%;

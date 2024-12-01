@@ -127,7 +127,7 @@
   background: #fff;
   box-shadow: 0 4px 2px 0 rgba(31, 78, 116, 0.25);
   border-radius: 20px;
-  width: 300px;
+  width: 310px;
   height: auto;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -267,12 +267,12 @@
   padding-bottom: 143px;
   border-radius: 40px;
   max-width: 1256px;
+  max-height: auto;
   margin: 0 auto;
-  background-image: url("../img/desctop_img/motivation__woman.png"),
-    url("../img/desctop_img/motivation_bg.png");
+  background-image: url("../img/desctop_img/motivation__woman.png"),url("../img/desctop_img/motivation__circle-bg.svg"), url("../img/desctop_img/motivation__bg.png");
   background-repeat: no-repeat;
-  background-position: center bottom, center;
-  background-size: 590px auto, cover;
+  background-position: center bottom, center, center;
+  background-size: 590px auto, cover, cover;
   background-clip: padding-box;
   margin-bottom: 100px;
   -webkit-border-radius: 40px;
@@ -357,9 +357,9 @@
     url("../img/desctop_img/course__green.png"),
     url("../img/desctop_img/course__bg1.png");
   background-repeat: no-repeat;
+  background-size: auto, auto 661px, auto, auto, 200px 210px, contain, cover;
   background-position: right bottom, 100% 100%, -30px 81%, -40px 130%, right top,
     right bottom, center;
-  background-size: auto, auto 661px, auto, auto, contain, contain, cover;
   margin-bottom: 100px;
   border-radius: 60px;
   -webkit-border-radius: 60px;
