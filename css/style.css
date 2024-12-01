@@ -351,22 +351,22 @@
   margin: 0 auto;
   background-image: url("../img/desctop_img/course__green.png"),
     url("../img/desctop_img/course__woman.png"),
-    url("../img/desctop_img/course__band1.png"),
-    url("../img/desctop_img/course__band2.png"),
+    url("../img/desctop_img/course__band1.svg"),
+    url("../img/desctop_img/course__band2.svg"),
     url("../img/desctop_img/course__green-top.png"),
     url("../img/desctop_img/course__green.png"),
     url("../img/desctop_img/course__bg1.png");
   background-repeat: no-repeat;
-  background-position: right bottom, 100% 100%, left 85%, left 95%, right top,
+  background-position: right bottom, 100% 100%, -30px 81%, -40px 130%, right top,
     right bottom, center;
-  background-size: auto, auto 661px, auto, auto, auto, auto, cover;
+  background-size: auto, auto 661px, auto, auto, contain, contain, cover;
   margin-bottom: 100px;
   border-radius: 60px;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
   -o-border-radius: 60px;
-  background-clip: border-box;
+  background-clip: padding-box;
 }
 /* .course-box {
   padding: 80px 43px 278px;
@@ -885,10 +885,12 @@ label {
 
 .refund__inner {
   margin-bottom: 42px;
+ 
   position: relative;
   height: 316px;
-  background: url("../img/desctop_img/refund__band2.png") 70% 120% / contain
-    no-repeat;
+  /* background: url("../img/desctop_img/refund__band2.svg") 70% 80px / cover
+    no-repeat; */
+   
 }
 .refund__upper {
   max-width: 970px;
@@ -896,14 +898,19 @@ label {
     no-repeat;
   margin: 0 auto;
   padding: 42px 58px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
+  position: relative;
 }
 .refund__text {
   max-width: 512px;
 }
 .refund__btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   border-radius: 10px;
   width: auto;
@@ -920,6 +927,11 @@ label {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 1000;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .refund__btn:hover,
 .refund__btn:active {
@@ -935,7 +947,13 @@ label {
 }
 .refund__band-1 {
   position: absolute;
-  top: 39%;
+  top: 16%;
+  width: 100%;
+  height: 100%;
+}
+.refund__band-2 {
+  position: absolute;
+  top: 18%;
   width: 100%;
   height: 100%;
 }
@@ -1049,7 +1067,7 @@ label {
 .swiper {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100% !important;
   height: 100% !important;
 }
 .swiper-wrapper {
