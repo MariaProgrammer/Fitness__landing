@@ -343,30 +343,35 @@
   font-size: 23px;
   color: var(--accent-color);
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
-
-.cifra-upper {
-  top: 46%;
-  left: 49%;
-}
-.circle-upper {
-  width: 110px;
-  height: 110px;
+  transform: translate(-48%, -50%);
+  -webkit-transform: translate(-48%, -50%);
+  -moz-transform: translate(-48%, -50%);
+  -ms-transform: translate(-48%, -50%);
+  -o-transform: translate(-48%, -50%);
 }
 .relief__img{
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  
 }
+.cifra-upper {
+  top: 46%;
+  left: 50%;
+ 
+}
+.cifra-upper-02 {
+  top: 46%;
+  left: 47%;
+}
+.circle-upper {
+  width: 112px;
+  height: 112px;
+}
+
+
 .relief__text {
   color: var(--tekst-v-mini);
 }
