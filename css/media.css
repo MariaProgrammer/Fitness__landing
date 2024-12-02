@@ -337,6 +337,9 @@
     padding-top: 0;
     margin-bottom: 0;
   }
+  .success__slider {
+    margin-bottom: 80px;
+  }
 
   .success__button-text {
     display: block;
@@ -402,6 +405,7 @@
   .swiper-wrapper {
     padding-top: 45px;
   }
+  
   .author__specialisation-img {
     display: none;
   }
@@ -574,7 +578,7 @@
     height: max-content;
   }
   .button__inner {
-    top: 74%;
+    top: 76%;
   }
 
   .footer__inner {
@@ -896,6 +900,9 @@
   .success__title {
     padding-top: 15px;
   }
+  .success__slider {
+    margin-bottom: 30px;
+  }
 
   .tariff__inner {
     margin-bottom: 60px;
@@ -981,6 +988,9 @@
   .hero__inner {
     background-size: 150px auto, cover;
     background-position: 95% 67%, 92% 70%;
+  }
+  .button__inner {
+    top: 80%;
   }
 }
 @media (max-width: 320px) {
