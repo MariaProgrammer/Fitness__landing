@@ -2,19 +2,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const next = document.querySelector('.swiper-button-next')
 const prev = document.querySelector('.swiper-button-prev')
+const right = document.querySelector('.success__button-right')
+const left = document.querySelector('.success__button-left')
+console.log(right, left);
+
 next.addEventListener('click', ()=> {
-if (!(next.classList.contains('active'))) {
-	next.classList.add('active');
+if (!(next.classList.contains('active')) ) {
+	next.classList.add('active');	
 	prev.classList.remove('active');
+	if (!(left.classList.contains('active')) ) {
+		left.classList.add('active');	
+		right.classList.remove('active');
 	
+}
 }
 })
 prev.addEventListener('click', ()=> {
 if (!(prev.classList.contains('active'))) {
-	prev.classList.add('active');
+	prev.classList.add('active');	
 	next.classList.remove('active');
-	
+
+		if (!right.classList.contains('active')) {
+		right.classList.add('active');	
+		left.classList.remove('active');	
 }
+}
+
 })
 
 const burger = document.querySelector('.burger');
@@ -58,8 +71,8 @@ const accordions = document.querySelectorAll('.accordion');
     speed: 1000,
     keyboard: true,	
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-prev',
+			prevEl: '.swiper-button-next',
 		},
 		breakpoints: {
 			// when window width is >= 320px

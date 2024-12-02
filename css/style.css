@@ -126,7 +126,7 @@
   padding: 60px;
   padding-top: 40px;
   padding-bottom: 40px;
- 
+
   background: #fff;
   box-shadow: 0 4px 2px 0 rgba(31, 78, 116, 0.25);
   border-radius: 20px;
@@ -275,7 +275,9 @@
   max-width: 1256px;
   max-height: auto;
   margin: 0 auto;
-  background-image: url("../img/desctop_img/motivation__woman.png"),url("../img/desctop_img/motivation__circle-bg.svg"), url("../img/desctop_img/motivation__bg.png");
+  background-image: url("../img/desctop_img/motivation__woman.png"),
+    url("../img/desctop_img/motivation__circle-bg.svg"),
+    url("../img/desctop_img/motivation__bg.png");
   background-repeat: no-repeat;
   background-position: center bottom, center, center;
   background-size: 590px auto, cover, cover;
@@ -340,8 +342,6 @@
   height: 103px;
   margin-bottom: 20px;
   position: relative;
-
-
 }
 .relief__item-cifra {
   font-family: var(--second-family);
@@ -357,7 +357,7 @@
   -ms-transform: translate(-48%, -50%);
   -o-transform: translate(-48%, -50%);
 }
-.relief__img{
+.relief__img {
   display: block;
   width: 100%;
   height: 100%;
@@ -366,7 +366,6 @@
 .cifra-upper {
   top: 46%;
   left: 50%;
- 
 }
 .cifra-upper-02 {
   top: 46%;
@@ -376,7 +375,6 @@
   width: 112px;
   height: 112px;
 }
-
 
 .relief__text {
   color: var(--tekst-v-mini);
@@ -678,7 +676,6 @@
 }
 .text--right {
   padding: 1.5em 4em 5em 7em;
-
 }
 .author__descr--text span {
   display: inline-block;
@@ -710,7 +707,6 @@
   background: linear-gradient(226deg, #e7edf2 77.17%, #86898c 100%);
   padding: 0.5em;
   margin-bottom: 41px;
-  
 }
 .author__specialisation-img {
   position: absolute;
@@ -720,7 +716,7 @@
   max-height: 331px;
   z-index: 600;
 }
-.author__specialisation-img img{
+.author__specialisation-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -937,12 +933,11 @@ label {
 
 .refund__inner {
   margin-bottom: 42px;
- 
+
   position: relative;
   height: 316px;
   /* background: url("../img/desctop_img/refund__band2.svg") 70% 80px / cover
     no-repeat; */
-   
 }
 .refund__upper {
   max-width: 970px;
@@ -1021,18 +1016,17 @@ label {
 }
 .button__inner {
   position: absolute;
-  top: 0;
+  top:-28px;
   left: 78%;
   width: 162px;
   height: 81px;
-
 }
 .button-box {
-  width: 100%;height: 100%;  
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .success__button-text {
   display: none;
@@ -1043,13 +1037,54 @@ label {
   color: var(--tekst);
   opacity: 0.8;
   position: relative;
-  left: 83px;
-
+  bottom: -25px;
 }
 .success__button {
   width: 46px;
   height: 46px;
+  position: relative;
   /* margin-left: 20px; */
+}
+.success__button__arr-right {
+  position: relative;
+}
+
+.success__button__arr-left {
+  position: relative;
+}
+.success__button-left {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -moz-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  -o-transform: translate(-50%, -50%) rotate(180deg);
+  z-index: 100;
+}
+
+.success__button-right {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.success__button-left svg path, .success__button-right svg path{
+  fill: #dce0e4;  
+  z-index: 200;
+}
+.success__button-right.active svg path {
+  fill: #fff;
+}
+.success__button-left.active svg path {
+  fill: #fff;
 }
 
 .success__button.active svg {
