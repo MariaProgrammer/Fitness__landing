@@ -329,11 +329,43 @@
   flex-direction: column;
   align-items: center;
 }
-.relief__img {
-  display: block;
+.relief__item-circle {
   width: 103px;
   height: 103px;
   margin-bottom: 20px;
+  position: relative;
+
+
+}
+.relief__item-cifra {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 23px;
+  color: var(--accent-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.cifra-upper {
+  top: 46%;
+  left: 49%;
+}
+.circle-upper {
+  width: 110px;
+  height: 110px;
+}
+.relief__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
 }
 .relief__text {
   color: var(--tekst-v-mini);
