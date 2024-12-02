@@ -494,7 +494,7 @@
   line-height: 167%;
   text-align: center;
   padding: 14px 30px 17px 30px;
-  width: 190px;
+  width: 218px;
   height: 40px;
   color: #2c2c2c;
   background: #fff;
@@ -530,8 +530,8 @@
 }
 .plaska-2::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-image: url("../img/desctop_img/program__icon_2.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -541,6 +541,15 @@
   background: var(--accent-color);
   color: white;
   z-index: 100;
+}
+.plaska-3::before {
+  content: "";
+  width: 15px;
+  height: 17px;
+  background-image: url("../img/desctop_img/program__icon_3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .progtam__subtitle {
   text-align: center;

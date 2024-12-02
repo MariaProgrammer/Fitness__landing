@@ -173,7 +173,7 @@
   }
   .motivation__line {
     height: 26px;
-    width: 1px;
+    width: 2px;
     background: var(--accent-color);
     position: absolute;
     left: 50%;
