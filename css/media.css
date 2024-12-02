@@ -343,7 +343,7 @@
   }
   .button__inner {
     width: 241px;
-    top: 77%;
+    top: 72%;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -574,7 +574,7 @@
     height: max-content;
   }
   .button__inner {
-    top: 80%;
+    top: 74%;
   }
 
   .footer__inner {
@@ -935,7 +935,7 @@
     max-width: 200px;
   }
   .button__inner {
-    top: 83%;
+    top: 78%;
   }
   .swiper-wrapper {
     padding-top: 30px;
