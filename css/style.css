@@ -124,6 +124,9 @@
   right: 15px;
   top: 80px;
   padding: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+ 
   background: #fff;
   box-shadow: 0 4px 2px 0 rgba(31, 78, 116, 0.25);
   border-radius: 20px;
@@ -148,6 +151,9 @@
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 40px;
+}
+.burger-menu__item:last-of-type {
+  margin-bottom: 0;
 }
 .burger-menu__item:hover,
 .burger-menu__item:active {
